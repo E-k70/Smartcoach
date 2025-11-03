@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #232323;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Outfit', sans-serif;
+    color: #9EFF1F;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #232323;
+}
+
+nav img {
+    height: 45px;
+    border-radius: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #232323;
+    background-color: #9EFF1F;
+    border-radius: 40px;
+    width: 125px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.headerText {
+    background-color: #2c2c2c;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.headerLinks a {
+    text-decoration: none;
+    color: #dcdcdc;
+    background-color: #232323;
+    border-radius: 40px;
+    width: 125px;
+    padding: 10px;
+}
+
+.headerLinks a:hover {
+    color: #232323;
+    background-color: #9EFF1F;
+    transition: 200ms;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.section div {
+    width: 45%;
+}
+
+.cta {
+    background-color: #2c2c2c;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #9EFF1F;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .section, .section.reverse {
+        flex-direction: column;
+    }
+
+    .section img, .section div {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .headerLinks {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

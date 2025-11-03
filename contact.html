@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="images/logo1.jpeg" alt="SmartCoach Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="manual.html">Manual</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <header id="Contact">
+            <div class="headerContent centerBox">
+                <h1>Contactformulier</h1>
+                <p>Mocht het zijn dat er onduidelijkheid is, vul dan gerust het onderstaande formulier in. Dan kunnen wij jou zo
+                    snel mogelijk tevreden maken.</p>
+            </div>
+        </header>
+        <h1 class="formTitle">Form</h1>
+        <form action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
+
+            <div class="formName centerBox">
+                <div class="formFirstName">
+                    <label for="firstName">Voornaam</label>
+                    <input type="text" name="firstName" id="firstName" required placeholder="voornaam..." />
+                </div>
+                <div>
+                    <label for="lastName">Achternaam</label>
+                    <input type="text" name="lastName" id="lastName" required placeholder="achternaam..." />
+                </div>
+            </div>
+            <div class="wideBox centerBox">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="e-mailadres..." />
+            </div>
+            <div class="cityAndBirthday centerBox">
+                <div>
+                    <label for="city">Woonplaats</label>
+                    <input type="text" name="city" id="city" required placeholder="Woonplaats..." />
+                </div>
+                <div>
+                    <label for="birthdate">Geboortedatum</label>
+                    <input type="date" name="birthdate" id="birthdate" required />
+                </div>
+            </div>
+            <div class="centerBox wideBox">
+                <label for="issue">Onderwerp</label>
+                <select id="issue" name="issue" required>
+                    <option value="" disabled selected>Kies een onderwerp...</option>
+                    <option value="0">Betalingsprobleem</option>
+                    <option value="1">Missend product</option>
+                    <option value="2">Overig</option>
+                </select>
+            </div>
+
+            <div class="wideBox centerBox">
+                <label for="message">Bericht</label>
+                <textarea type="text" name="message" id="message" required></textarea>
+            </div>
+
+            <div class="wideBox centerBox">
+                <label for="news-Letter">Inschrijven voor de nieuwsbrief?</label>
+                <div class="yesOrNo">
+                    <div class="radio-option">
+                        <input type="radio" id="subscribe" name="news-letter" value="subscribe" required />
+                        <label for="subscribe">Ja</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dontSubscribe" name="news-letter" value="dontSubscribe" />
+                        <label for="dontSubscribe">Nee</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="centerBox">
+                <input type="checkbox" id="terms-of-service" name="terms-of-service" required />
+                <label for="terms-of-service">Ik ga akkoord met de algemene voorwaarden</label>
+            </div>
+
+            <button class="centerBox" type="submit" name="submit-button">Verzenden</button>
+        </form>
+        <footer>
+            <div class="socials">
+                <img src="images/logo.png" alt="spray-can-logo" width="30px">
+                <small>Copyright 2025 Spraystore</small>
+            </div>
+            <div class="legal">
+                <a href="#">Privacyverklaring</a>
+                <a href="#">Algemene Voorwaarden</a>
+                <a href="#">Cookiebeleid</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+        </
+</body>
+
+</html>
